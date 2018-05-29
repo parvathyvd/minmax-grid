@@ -1,0 +1,36 @@
+$primary-color: #d3d3d3;
+
+body{
+    color: $primary-color;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+ display: grid;
+ grid-template-columns: minmax(5em,1fr) minmax(auto,30em) minmax(5em,1fr);
+
+ 
+ 
+ .main-text{
+    background: rgb(172, 172, 172);
+     padding: 1em 5vw;
+     display: flex;
+     text-align: center;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+ img{
+    object-fit: cover;
+    min-height: 100%;
+    min-width: 100%;  
+    display: block;  
+ }
+}
